@@ -10,6 +10,8 @@ namespace kesam
       int[] a = new int[10];
       for (int i = 0; i < a.Length; i++)
         a[i] = random.Next(a.Length);
+      SelectionSort(a);
+      
       for (int i = 0; i < a.Length; i++)
         Console.Write("{0}, ", a[i]);
 
@@ -36,9 +38,9 @@ namespace kesam
     {
       if (i1 != i2)
       {
-        int p = a[1];
+        int p = a[i1];
         a[i1] = a[i2];
-        a[2] = p;
+        a[i2] = p;
       }  
     }
     
