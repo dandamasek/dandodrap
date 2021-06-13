@@ -1,3 +1,1 @@
-# dandodrap
-# dandodrap
 # čus
