@@ -6,8 +6,9 @@ namespace try
 internal class Program
 {
     static Random random = new Random();
-    public static void Main(string[] args)
+    public static void Main(string[] args)s
     {
+<<<<<<< HEAD
         int[] a = new int[10];
         for (int i = 0; i < a.Lenght; i++)
             a[i] = random.Next(a.Lenght);
@@ -38,6 +39,9 @@ internal class Program
             a[i1] = a[i2];
             a[i2] = p;
         }
+=======
+        Console.WriteLine("hdddsssoj");
+>>>>>>> origin/main
     }
     
 }

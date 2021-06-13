@@ -1,0 +1,6 @@
+/home/dandamasek/dandamasek/git/kesam/kesam/obj/Debug/kesam.csprojAssemblyReference.cache
+/home/dandamasek/dandamasek/git/kesam/kesam/obj/Debug/kesam.csproj.CoreCompileInputs.cache
+/home/dandamasek/dandamasek/git/kesam/kesam/bin/Debug/kesam.exe
+/home/dandamasek/dandamasek/git/kesam/kesam/bin/Debug/kesam.pdb
+/home/dandamasek/dandamasek/git/kesam/kesam/obj/Debug/kesam.exe
+/home/dandamasek/dandamasek/git/kesam/kesam/obj/Debug/kesam.pdb
