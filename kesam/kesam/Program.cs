@@ -1,49 +1,82 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace kesam
 {
   internal class Program
   {
-    static Random random = new Random();
-    public static void Main(string[] args)
-    {
-      int[] a = new int[10];
-      for (int i = 0; i < a.Length; i++)
-        a[i] = random.Next(a.Length);
-      SelectionSort(a);
+
+      public static void Main(string[] args)
+      {
+          //vypsani pole s počatečníma 0
+          int m = 3;
+          int n = 3;
+          int[,] pole = new int[m, n];
+
+          for (int i = 0; i < pole.GetLength(0); i++)
+          for (int j = 0; j < pole.GetLength(1); j++)
+          {
+              pole[i, j] = 0;
+          }
+
+
+          //vypsaní
+          for (int i = 0; i < pole.GetLength(0); i++)
+          {
+              for (int j = 0; j < pole.GetLength(1); j++)
+              {
+                  Console.Write("{0}, ", pole[i, j]);
+              }
+
+              Console.WriteLine();
+          }
+
+          Console.Write("zapiš pozici pro x: ");
+          int x = Convert.ToInt32(Console.ReadLine()) -1;
+
+          Console.Write("zapiš pozici pro y: ");
+          int y = Convert.ToInt32(Console.ReadLine()) -1;
+
+          for (int i = 0; i < pole.GetLength(0); i++)
+          {
+              for (int j = 0; j < pole.GetLength(1); j++)
+                  if ( i == x)
+                  {
+                      if ( j == y)
+                      {
+                          pole[i, j] = 1;
+                         
+                          }
+                      }
+                  }
+          for (int i = 0; i < pole.GetLength(0); i++)
+          {
+              for (int j = 0; j < pole.GetLength(1); j++)
+              {
+                  Console.Write("{0}, ", pole[i, j]);
+              }
+
+              Console.WriteLine();
+          }
+          
+          
+          
+          
+          }
+    
       
-      for (int i = 0; i < a.Length; i++)
-        Console.Write("{0}, ", a[i]);
-
-      Console.ReadLine();
-    }
-
-
-    static void SelectionSort(int[] a)
-    {
-      for (int j = 0; j < a.Length-1; j++)
-      {
-        int iMin = j;
-        for (int i = j+1; i < a.Length; i++)
-        {
-          if (a[i] < a[iMin])
-            iMin = i;
-        }
-
-        Prohod(a, j, iMin);
       }
-    }
 
-    static void Prohod(int[] a, int i1, int i2)
-    {
-      if (i1 != i2)
-      {
-        int p = a[i1];
-        a[i1] = a[i2];
-        a[i2] = p;
-      }  
-    }
-    
-    
+
+
+
+
   }
-}
+    
+    
+
+      
+      
+      
+
+
