@@ -46,10 +46,10 @@ namespace kesam
               {
                   zadej = zadej - 1;
                   Console.Write("zapiš pozici pro x: ");
-                  int y = Convert.ToInt32(Console.ReadLine()) - 1;
+                  int x = Convert.ToInt32(Console.ReadLine()) - 1;
 
                   Console.Write("zapiš pozici pro y: ");
-                  int x = Convert.ToInt32(Console.ReadLine()) - 1;
+                  int y = Convert.ToInt32(Console.ReadLine()) - 1;
 
                   for (int i = 0; i < pole.GetLength(0); i++)
                   {
@@ -107,17 +107,33 @@ namespace kesam
 
 
                   }
+                  
+                  //kontrola výhry
+                  for (int i = 0; i < pole.GetLength(0); i++)
+                    for (int j = 0; j < pole.GetLength(1); j++)
+                        while (pole[i,j] == 1)
+                        {
+                            int jedna = 0;
+                            jedna += 1;
+                            for (int i = 0; i < pole.GetLength(0); i++)
+                            {
+                                
+                            }
+                        }
 
-              }
+
+                  }
 
               for (int i = 0; i < pole.GetLength(0); i++)
                         {
                             for (int j = 0; j < pole.GetLength(1); j++)
                             {
-                                Console.Write("{0,2} ", pole[i, j]);
-                            }
+                                
+                                   Console.Write("{0,2} ", pole[i, j]);
+                                    
 
-                            Console.WriteLine();
+                            }
+                                    Console.WriteLine();
                         }
 
                     
