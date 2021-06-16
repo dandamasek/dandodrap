@@ -1,0 +1,6 @@
+/home/dandamasek/dandamasek/git/piskvorky/piskvorky/bin/Debug/piskvorky.exe
+/home/dandamasek/dandamasek/git/piskvorky/piskvorky/bin/Debug/piskvorky.pdb
+/home/dandamasek/dandamasek/git/piskvorky/piskvorky/obj/Debug/piskvorky.csprojAssemblyReference.cache
+/home/dandamasek/dandamasek/git/piskvorky/piskvorky/obj/Debug/piskvorky.csproj.CoreCompileInputs.cache
+/home/dandamasek/dandamasek/git/piskvorky/piskvorky/obj/Debug/piskvorky.exe
+/home/dandamasek/dandamasek/git/piskvorky/piskvorky/obj/Debug/piskvorky.pdb
